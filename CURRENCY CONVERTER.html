@@ -1,0 +1,28 @@
+<body>
+  <h1>Currency Converter</h1>
+  <h2>Enter INR amount:</h2>
+  <input  id="inr" >
+  <button onclick="convertusd()">USD</button>
+  <button onclick="convertyen()">YEN</button>
+  <button onclick="converteuro()">EURO</button>
+  <p id="result"></p>
+  <script>
+    function convertusd() {
+      var inr = document.getElementById("inr").value;
+      var er = 0.014;
+      var usd = inr* er;
+      document.getElementById("result").innerHTML = usd+ " USD";
+    }
+    function convertyen() {
+      var inr = document.getElementById("inr").value;
+      var er = 1.8;
+      var yen = inr * er;
+      document.getElementById("result").innerHTML = yen+ " YEN";
+    }
+    function converteuro() {
+      var inr = document.getElementById("inr").value;
+      var er = 0.0113;
+      var euro = inr * er;
+      document.getElementById("result").innerHTML = euro+ " EURO";
+    }
+  </script>
